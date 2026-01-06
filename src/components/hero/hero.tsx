@@ -65,7 +65,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a href="#contato" className="botao-gradiente-laranja px-5">
+            <a href="#contato" className="botao-gradiente-laranja pt-[20px] pb-[20px] pl-[20px] pr-[20px] ">
               Entre em Contato
               <ArrowRight size={20} />
             </a>
