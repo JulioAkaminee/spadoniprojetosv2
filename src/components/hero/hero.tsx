@@ -28,7 +28,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative flex flex-col justify-center items-center w-full z-10 container-custom section-padding pt-20">
-        <div className="max-w-3xl">
+        <div className="ml-20 mr-20 max-w-3xl  ">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,12 +65,11 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a href="#contato" className="btn-accent  bg-gradient-to-r from-orange-400 to-orange-500
-              shadow-lg shadow-orange-500/40 font-dm-sans">
+            <a href="#contato" className="botao-gradiente-laranja px-5">
               Entre em Contato
               <ArrowRight size={20} />
             </a>
-            <a href="#projetos" className="btn-outline-light font-dm-sans">
+            <a href="#projetos" className="btn-outline-light font-dm-sans hover:bg-[#ffffff29] hover:scale-105">
               Ver Projetos
             </a>
           </motion.div>
@@ -81,9 +80,9 @@ const Hero = () => {
           className="mt-16 md:mt-10 grid grid-cols-3 gap-8 max-w-xl text-white"
         >
           {[
-            { value: "500+", label: "Projetos" },
-            { value: "15+", label: "Anos" },
-            { value: "50+", label: "Clientes" },
+            { value: "100+", label: "Projetos" },
+            { value: "4+", label: "Anos" },
+            { value: "15+", label: "Clientes" },
           ].map((stat, index) => (
             <div key={index} className="text-center font-playfair text-[#f49d25] md:text-left">
               <div className="text-3xl md:text-4xl  font-bold text-accent mb-1">
@@ -103,7 +102,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2"
+        className="hidden md:block absolute bottom-4 left-1/2 -translate-x-1/2"
       >
         <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2 ">
           <motion.div

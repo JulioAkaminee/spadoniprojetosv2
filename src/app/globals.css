@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 
-@theme inline{
- --font-playfair:var(--font-playfair);
- --font-dm-sans: var(--font-dm-sans);
- 
-     --background: 40 20% 98%;
+@theme inline {
+    --font-playfair: var(--font-playfair);
+    --font-dm-sans: var(--font-dm-sans);
+
+    --background: 40 20% 98%;
     --foreground: 220 20% 10%;
     --card: 0 0% 100%;
     --card-foreground: 220 20% 10%;
@@ -40,26 +40,39 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
 }
+
 :root {
-  --bg-text: #F49E16;
+    --bg-text: #F49E16;
 }
 
-.btn-accent {
+.botao-gradiente-laranja {
     display: inline-flex;
+    min-width: max-content;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    cursor: pointer;
+   
     border-radius: 9999px;
-    padding: 1rem 2rem;
+
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    color: hsl(var(--accent-foreground));
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    transition-duration: .3s;
-    animation-duration: .3s;
- 
-    box-shadow: 0 4px 20px #f49d2566;
+    color: #ffffff;
+
+    background: linear-gradient(to right, #fb923c, #f97316);
+
+
+
+    transition: all 0.4s ease;
 }
+
+.botao-gradiente-laranja:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(249, 115, 22, 0.6);
+    box-shadow: 0 10px 15px rgba(249, 115, 22, 0.4);
+}
+
+
+
 
 .btn-outline-light {
     display: inline-flex;
