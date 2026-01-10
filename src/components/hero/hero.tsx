@@ -17,7 +17,6 @@ const Hero = () => {
           alt="Background"
           fill
           priority
-          quality={100}
           className="object-cover"
         />
         <div
